@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Cryptosquare</title>
+</head>
+<body>
+  <div class="container">
+    <h1>CoolCrypt Encryption</h1>
+    <h2> Encrypt your messages like never before! For just a small fee of 19.95 per month (annual subscriptions only), you can hide your <i>secret</i> messages from your friends. </h2>
+
+    <form id="cool-cryptosquare">
+      <div class="form-group">
+        <label for="sentence">Your sentence:</label>
+        <input id="sentence" type="text">
+      </div>
+
+      <button type="submit" class="btn">Encrypt it!</button>
+    </form>
+
+    <div id="result">
+      <p>You gave us the sentence "<span class="sentence"></span>" and we turned it into "<span class="result"></span>".</p>
+    </div>
+  </div>
+</body>
+</html>

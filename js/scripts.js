@@ -20,7 +20,6 @@ var divideMessage = function(string) {
   var outputArray = [""];
   var total = 0;
   var loopbool = true;
-  // output = inString.substring(0,1);
   while (loopbool === true) {
     if (count > square -1) {
       count = 0;
@@ -39,3 +38,16 @@ var divideMessage = function(string) {
 
   return outputArray.join("");
 };
+
+$(document).ready(function() {
+  $("form#cool-cryptosquare").submit(function(event) {
+    var sentence = $("input#sentence").val());
+    var result = divideMessage(sentence);
+
+  $(".sentence").text(sentence);
+  $(".result").text(result);
+
+    $("#result").show();
+    event.preventDefault();
+  });
+});
