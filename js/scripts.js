@@ -11,3 +11,31 @@ var findSquare = function(strLength) {
   };
   return count;
 };
+
+var divideMessage = function(string) {
+  var inString = coolCryptosquare(string);
+  var square = findSquare(inString.length);
+  var output = "";
+  var count = 0;
+  var outputArray = [""];
+  var total = 0;
+  var loopbool = true;
+  // output = inString.substring(0,1);
+  while (loopbool === true) {
+    if (count > square -1) {
+      count = 0;
+    }
+    if (total < square) {
+      outputArray[count] = (inString.substring(0 + total,1 + total))
+    } else {
+    outputArray[count] = outputArray[count] + (inString.substring(0 + total,1 + total))
+    }
+    count +=1;
+    total +=1;
+    if (total >= string.length) {
+      loopbool=false;
+    }
+  };
+
+  return outputArray.join("");
+};

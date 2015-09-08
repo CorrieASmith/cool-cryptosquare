@@ -12,3 +12,10 @@ describe('findSquare', function() {
     expect(findSquare(12)).to.equal(4); //The closest square is 4x4=16, looking for the 4.
   });
 });
+
+describe('divideMessage', function() {
+  it("tests divideMessage splitting", function() {
+    // expect(divideMessage('ilikecats')).to.equal("ikaletics"); //real expected
+    expect(divideMessage('ilikecats')).to.equal("ikaletics"); //test expected
+  });
+});
